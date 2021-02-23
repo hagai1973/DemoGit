@@ -51,4 +51,15 @@ public class Base {
 		return text;
 	}
 
+	
+	/*
+	 * Parameters: 1. WebElement getText after verify exist
+	 */
+	public String getText_(By by) {
+		// Verify the WebElement is click able and then click
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((by)));
+		String text = driver.findElement(by).getText();
+		
+		return text;
+	}
 }
