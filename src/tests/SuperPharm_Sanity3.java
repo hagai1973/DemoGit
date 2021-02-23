@@ -24,7 +24,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
 
-public class SuperPharm_Sanity2 {
+public class SuperPharm_Sanity3 {
 
 	// Global variables 
 	// Add extent reports
