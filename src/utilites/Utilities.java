@@ -24,7 +24,7 @@ public class Utilities {
 	
 	
 	public static String getDataFromXML(String fileName, String keyData, int index) throws ParserConfigurationException, SAXException, IOException {
-		//	Locate file			
+		//	Locate file	for getting data from
 		String path = System.getProperty("user.dir");
 		File xmlFile = new File(path +"\\resources\\"+ fileName);
 		
