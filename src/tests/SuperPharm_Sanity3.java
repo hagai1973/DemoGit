@@ -24,7 +24,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
 
-public class SuperPharm_Sanity {
+public class SuperPharm_Sanity2 {
 
 	// Global variables 
 	// Add extent reports
@@ -96,13 +96,6 @@ public class SuperPharm_Sanity {
 	
 	@Test(priority = 3, enabled = true, description = "Remove product from cart")
 	public void removeProductFromCart() throws InterruptedException, IOException {	
-		main.goToCart();
-		Assert.assertTrue(cart.removeProductFromCart(), "Could not empty cart");
-		
-	}
-	
-	@Test(priority = 4, enabled = false, description = "Remove product from cart")
-	public void removeProductFromCart_test() throws InterruptedException, IOException {	
 		main.goToCart();
 		Assert.assertTrue(cart.removeProductFromCart(), "Could not empty cart");
 		
